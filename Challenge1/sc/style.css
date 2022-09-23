@@ -1,4 +1,193 @@
-body {
-    margin: 0;
+@import url("https://fonts.google.com/specimen/Montserrat");
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500&display=swap');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+p, h5, h4, .button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: .86rem;
+}
+
+h3 {
+    font-family: "Fraunces", serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.card_prices h3, h4 {
+    margin: .75em 0;
+}
+
+.card_text, .card_subtitle, .old_price {
+    color: hsl(228, 12%, 48%);
+}
+
+.old_price {
+    font-size: .75rem;
+}
+
+.background {
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    width: 343px;
+    height: 620px;
+    max-width: 1000px;
+}
+
+.container {
+    padding: 1.5em;
+    /* height: 50%; */
+}
+
+.card_img {
+    background-image: url(/Challenge1/product-preview-card-component-main/images/image-product-mobile.jpg);
+    height: 240px;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card_subtitle {
+    margin: 0;
+    letter-spacing: .3em;
+    font-size: .6875rem;
+}
+
+.card_title {
+    margin: .25em 0;
+}
+
+.card_text {
+    line-height: 1.5rem;
+    margin-bottom: 0;
+    font-size: .91rem;
+}
+
+.card_prices {
+    display: flex;
+    display: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.card_prices h3 {
+    color: hsl(158, 36%, 37%);
+}
+
+.button {
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    width: 100%;
+    padding: 1.15em;
+    border-radius: 7px;
+
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+}
+
+@media (min-width: 725px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 700px;
+        height: 525px;
+    }
+
+    .card_img {
+        background-image: url(/Challenge1/product-preview-card-component-main/images/image-product-desktop.jpg);
+        height: 100%;
+        width: 50%;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .container {
+        width: 50%;
+        height: 100%;
+        padding: 2.5em;
+    }
+
+    .card_subtitle {
+        font-size: .9rem;
+    }
+
+    .card_title, .new_price {
+        font-size: 2.5rem;
+    }
+
+    .card_text {
+        font-size: 1rem;
+    }
+
+    .old_price {
+        font-size: .8rem;
+    } 
+
+    .button {
+        font-size: 1rem;
+        padding: 1.1em;
+    }
+}
+
+
+
+
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700 */
